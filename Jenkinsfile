@@ -14,7 +14,7 @@ pipeline {
         }
         stage('continous deployment') {
             steps {
-                sh 'sshpass -p "mom" scp target/hello-1.0.war mom@172.17.0.3:/opt/apache-tomcat-9.0.59/webapps'
+                sh 'sshpass -p "dad" scp target/hello-1.0.war dad@172.17.0.4:/opt/apache-tomcat-9.0.59/webapps'
             }
         }
     }
